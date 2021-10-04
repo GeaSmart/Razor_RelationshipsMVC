@@ -16,5 +16,6 @@ namespace SmallExample.Models
 
         public DbSet<Login> Login { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<UserType> UserType {get; set;}
     }
 }

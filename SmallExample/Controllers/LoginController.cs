@@ -46,5 +46,12 @@ namespace SmallExample.Controllers
             context.SaveChanges();
             return View();
         }
+
+        [HttpGet]
+        public async Task<List<UserType>> GetUserTypes()
+        {
+            return null;// await context.use
+        }
+
     }
 }

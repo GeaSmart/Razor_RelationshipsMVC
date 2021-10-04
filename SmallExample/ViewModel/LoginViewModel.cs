@@ -8,7 +8,7 @@ namespace SmallExample.ViewModel
 {
     public class LoginViewModel
     {
-        
+        [Required]
         public string Username { get; set; }
 
         [DataType(DataType.Password)]        
@@ -18,6 +18,7 @@ namespace SmallExample.ViewModel
         [Compare("Password")]
         public string RePassword { get; set; }
         public string Address { get; set; }
+        [EmailAddress(ErrorMessage ="No tiene formato de email")]
         public string Email { get; set; }
     }
 }
