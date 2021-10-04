@@ -17,6 +17,6 @@ namespace SmallExample.Entities
         public int UserTypeId { get; set; }
 
         //propiedad de navegación
-        public UserType UserType { get; set; }
+        public UserType UserType { get; set; }        
     }
 }
