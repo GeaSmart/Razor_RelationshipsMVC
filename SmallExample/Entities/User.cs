@@ -14,5 +14,9 @@ namespace SmallExample.Entities
         public string Username { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
+        public int UserTypeId { get; set; }
+
+        //propiedad de navegación
+        public UserType UserType { get; set; }
     }
 }
