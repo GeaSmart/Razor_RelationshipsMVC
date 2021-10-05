@@ -12,6 +12,7 @@ namespace SmallExample.ViewModel
         [Required]
         [Display(Name ="Nombre de usuario")]
         public string Username { get; set; }
+
         [Display(Name = "Ingrese su contraseña")]
         [DataType(DataType.Password)]        
         public string Password { get; set; }
@@ -20,9 +21,12 @@ namespace SmallExample.ViewModel
         [Compare("Password")]
         [Display(Name = "Confirme su contraseña")]
         public string RePassword { get; set; }
+
         public string Address { get; set; }
+
         [EmailAddress(ErrorMessage ="No tiene formato de email")]
         public string Email { get; set; }
+
         [Display(Name ="Tipo de usuario")]
         public int UserTypeId { get; set; }
 
